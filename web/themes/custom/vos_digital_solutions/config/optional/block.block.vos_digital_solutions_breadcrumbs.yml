@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vos_digital_solutions
+id: vos_digital_solutions_breadcrumbs
+theme: vos_digital_solutions
+region: header
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: "0"
+  provider: system
+visibility: {}
