@@ -33,7 +33,6 @@
         "drupal/drupal_cms_seo_tools": "~1.0.1",
         "drupal/drupal_cms_starter": "~1.0.0",
         "drupal/project_browser": "@alpha",
-        "drupal/radix": "^6.0",
         "drupal/webform": "@beta",
         "drush/drush": "^13"
     },
@@ -55,6 +54,9 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "file-mapping": {
+                "[web-root]/sites/default/default.settings.php": false
             }
         },
         "installer-paths": {
