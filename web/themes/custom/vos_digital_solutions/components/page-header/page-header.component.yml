@@ -1,0 +1,39 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
+name: Page Header
+status: experimental
+description: 'The header component of a page, including a top section, middle section, and bottom section.'
+props:
+  type: object
+  properties: {}
+  page_header_container_type:
+      type: ['string', 'boolean']
+      title: Container
+      description: container type
+      default: ''
+      enum:
+        - false
+        - ''
+        - sm
+        - md
+        - lg
+        - xl
+        - xxl
+        - fluid
+  page_header_container_utility_classes:
+    type: array
+    items:
+      type: string
+    description: 'Additional utility classes added to the header section of the main content area.'
+  page_header_container_attributes:
+      type: Drupal\Core\Template\Attribute
+      description: 'HTML attributes for the header section of the main content area.'
+slots:
+  header_top:
+    title: Header Top
+    description: 'The top section of the header.'
+  header_middle:
+    title: Header Middle
+    description: 'The middle section of the header.'
+  header_bottom:
+    title: Header Bottom
+    description: 'The bottom section of the header.'

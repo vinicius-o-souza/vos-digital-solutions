@@ -57,7 +57,8 @@
                 "web-root": "web/"
             },
             "file-mapping": {
-                "[web-root]/sites/default/default.settings.php": false
+                "[web-root]/sites/default/default.settings.php": false,
+                "[web-root]/sites/development.settings.php": false
             }
         },
         "installer-paths": {

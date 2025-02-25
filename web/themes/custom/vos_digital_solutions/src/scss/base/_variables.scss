@@ -14,3 +14,37 @@
  * $body-bg: #000;
  * $body-color: $gray-100;
  */
+
+//  Colors
+$blue: #00698F;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #CE3836;
+$orange: #fd7e14;
+$yellow: #C95100;
+$green: #008482;
+$teal: #20c997;
+$cyan: #007CBF;
+
+// Custom colors
+$primary: #00698F;
+$secondary: #007CBF;
+$success: #008482;
+$info: #007CBF;
+$warning: #C95100;
+$danger: #CE3836;
+$light: #E6E9EB;
+$dark: #121313;
+ 
+// Color palette
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);

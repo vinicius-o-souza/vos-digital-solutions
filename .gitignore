@@ -31,7 +31,6 @@
 /web/modules/contrib
 /web/profiles/README.txt
 /web/profiles/*
-/web/sites/development.services.yml
 /web/sites/example.settings.local.php
 /web/sites/example.sites.php
 /web/sites/README.txt

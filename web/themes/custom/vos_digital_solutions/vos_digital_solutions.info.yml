@@ -7,18 +7,24 @@ engine: twig
 type: theme
 'base theme': radix
 starterkit: true
+enforce_prop_schemas: true
 
 'interface translation project': vos_digital_solutions
 'interface translation server pattern': themes/custom/vos_digital_solutions/translations/%language.po
 
 regions:
-  navbar_branding: 'Navbar branding'
-  navbar_left: 'Navbar left'
-  navbar_right: 'Navbar right'
-  header: Header
-  content: Content
-  page_bottom: 'Page bottom'
-  footer: Footer
+  header_top: 'Header top'
+  header_middle: 'Header middle'
+  header_bottom: 'Header bottom'
+  sidebar_left: 'Sidebar left'
+  breadcrumb: 'Breadcrumb'
+  content_top: 'Content top'
+  content: 'Content'
+  content_bottom: 'Content bottom'
+  sidebar_right: 'Sidebar right'
+  footer_top: 'Footer top'
+  footer_middle: 'Footer middle'
+  footer_bottom: 'Footer bottom'
 
 
 libraries:

@@ -1,0 +1,9 @@
+vos.style_guide:
+  path: '/admin/vos/style-guide'
+  defaults:
+    _title: 'VOS Style Guide'
+    _controller: '\Drupal\vos\Controller\VosStyleGuideController'
+  requirements:
+    _permission: 'access content'
+  options:
+    _admin_route: FALSE

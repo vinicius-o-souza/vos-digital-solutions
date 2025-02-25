@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * VOS module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function vos_theme() {
+  return [
+    'vos_style_guide' => [
+      'template' => 'vos-style-guide',
+      'render element' => 'element',
+    ],
+  ];
+}

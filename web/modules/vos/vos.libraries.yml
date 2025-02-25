@@ -1,0 +1,4 @@
+style_guide:
+  css:
+    theme:
+      css/style-guide.css: {}
