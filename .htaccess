@@ -1,3 +1,8 @@
 RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?vosdrupalsolutions.com$
 RewriteCond %{REQUEST_URI} !^/web/
-RewriteRule ^(.*)$ /web/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /web/$1
+RewriteCond %{HTTP_HOST} ^(www.)?vosdrupalsolutions.com$
+RewriteRule ^(/)?$ web/index.php [L]
