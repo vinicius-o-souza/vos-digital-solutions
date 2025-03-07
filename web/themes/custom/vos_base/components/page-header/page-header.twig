@@ -1,0 +1,95 @@
+{#
+/**
+ * @file
+ * Template for a Page Header component.
+ *
+ * Available config:
+ * - page_header_container_attributes: 
+ * - page_header_container_type: sm | md | lg | xl | xxl | fluid.
+ * - page_header_container_utility_classes: An array of utility classes.
+ *
+ * Available blocks:
+ * - header_top
+ * - navbar
+ * - header_middle_left
+ * - header_middle_right
+ * - header_bottom
+ */
+#}
+{% set page_header_container_attributes = page_header_container_attributes ?: create_attribute() %}
+{% set header_container_class = '' %}
+{% if page_header_container_type is null %}
+  {% set header_container_class = 'container' %}
+{% elseif page_header_container_type is not empty %}
+  {% set header_container_class = 'container-' ~ page_header_container_type %}
+{% endif %}
+{%
+  set page_header_container_classes = [
+    header_container_class
+  ]|merge(page_header_container_utility_classes ?: [])
+%}
+{% set header_attributes = header_attributes ?: create_attribute() %}
+{%
+  set header_classes = [
+    'page__header',
+  ]|merge(header_utility_classes ?: [])
+%}
+
+<header {{ header_attributes.addClass(header_classes) }}>
+  {% if page.header_top %}
+    {% block header_top %}
+      <div class="bg-light d-none d-lg-block page__header--top page__header--top-desktop">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
+            {{ page.header_top }}
+          </div>
+        </div>
+      </div>
+    {% endblock %}
+  {% endif %}
+
+  {% block navbar %}
+    {% embed 'vos_digital_solutions:navbar' with {
+      navbar_utility_classes: ['bg-primary']
+    } %}
+
+      {% block branding %}
+        {% if page.header_middle_left %}
+          {{ page.header_middle_left }}
+        {% endif %}
+      {% endblock %}
+
+      {% block navbar_content %}
+        {% if page.header_middle_right %}
+          {% block header_middle_right %}
+            <div class="bg-primary">
+              <div {{ page_header_container_attributes.addClass(page_header_container_classes) }}>
+                <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
+                  {{ page.header_middle_right }}
+                </div>
+              </div>
+            </div>
+          {% endblock %}
+        {% endif %}
+
+        {% if page.header_top %}
+          <div class="d-block d-lg-none page__header--top page__header--top-mobile">
+            {{ page.header_top }}
+          </div>
+        {% endif %}
+
+      {% endblock %}
+
+    {% endembed %}
+  {% endblock %}
+
+  {% if page.header_bottom %}
+    {% block header_bottom %}
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
+          {{ page.header_bottom }}
+        </div>
+      </div>
+    {% endblock %}
+  {% endif %}
+</header>

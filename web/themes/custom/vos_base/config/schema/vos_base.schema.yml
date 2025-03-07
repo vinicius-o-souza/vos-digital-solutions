@@ -1,0 +1,5 @@
+# Schema for the configuration files of the vos_base theme.
+
+vos_base.settings:
+  type: theme_settings
+  label: 'vos_base settings'

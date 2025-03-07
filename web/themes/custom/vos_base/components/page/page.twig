@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ *
+ * Available variables:
+ * - page_attributes: HTML attributes for the page component.
+ * - page_utility_classes: An array of utility classes that can be added to the page element.
+ *
+ * Available blocks:
+ * - page_header
+ * - page_content
+ * - page_footer
+ */
+#}
+{% set page_attributes = attributes ?: create_attribute() %}
+{% set 
+  page_classes = [
+    'page',
+  ]|merge(page_utility_classes ?: []) 
+%}
+
+<div {{ page_attributes.addClass(page_classes) }}>
+
+  {% block page_header %}
+		{% include 'vos_digital_solutions:page-header' %}
+	{% endblock %}
+
+  {% block page_content %}
+    {% include 'vos_digital_solutions:page-content' %}
+  {% endblock %}
+
+  {% block page_footer %}
+    {% include 'vos_digital_solutions:page-footer' with {
+      footer_utility_classes: ['bg-primary']
+    } %}
+	{% endblock %}
+
+</div>

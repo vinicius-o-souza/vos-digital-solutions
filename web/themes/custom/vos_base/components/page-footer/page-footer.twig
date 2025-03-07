@@ -1,0 +1,57 @@
+{#
+/**
+ * @file
+ * Template for a Page Footer component.
+ *
+ * Available config:
+ * - footer_attributes: HTML attributes for the footer content area of the page.
+ * - footer_utility_classes: An array of utility classes.
+ *
+ * Available blocks:
+ * - footer_top
+ * - footer_middle
+ * - footer_bottom
+ */
+#}
+{% set footer_attributes = footer_attributes ?: create_attribute() %}
+{%
+  set footer_classes = [
+    'page__footer',
+  ]|merge(footer_utility_classes ?: [])
+%}
+
+<footer {{ footer_attributes.addClass(footer_classes) }}>
+  <div class="container">
+    <div class="d-flex flex-column justify-content-md-between align-items-md-center">
+      <div class="page__footer--top w-100">
+        <div class="d-flex flex-column flex-lg-row justify-content-md-between align-items-md-center">
+          {% if page.footer_top %}
+            {% block footer_top %}
+              {{ page.footer_top }}
+            {% endblock %}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="page__footer--middle border-top border-info w-100">
+        <div class="d-flex flex-column flex-lg-row justify-content-md-between align-items-md-center"></div>
+          {% if page.footer_middle %}
+            {% block footer_middle %}
+              {{ page.footer_middle }}
+            {% endblock %}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="page__footer--bottom border-top border-info w-100">
+        <div class="d-flex flex-column flex-lg-row justify-content-md-between align-items-md-center"></div>
+          {% if page.footer_bottom %}
+            {% block footer_bottom %}
+              {{ page.footer_bottom }}
+            {% endblock %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

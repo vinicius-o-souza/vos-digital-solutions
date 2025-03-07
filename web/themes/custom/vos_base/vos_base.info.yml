@@ -1,0 +1,22 @@
+name: vos_base
+type: theme
+'base theme': stable9
+version: 1.0.0
+libraries:
+  - vos_base/base
+  - vos_base/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - vos_base/user
+  core/drupal.dropbutton:
+    - vos_base/dropbutton
+  core/drupal.dialog:
+    - vos_base/dialog
+  file/drupal.file:
+    - vos_base/file
+  core/drupal.progress:
+    - vos_base/progress
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.1.3'
