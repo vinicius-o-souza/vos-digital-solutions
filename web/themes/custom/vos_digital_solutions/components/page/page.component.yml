@@ -1,6 +1,8 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
 name: Page
 status: experimental
+group: Bootstrap
+replaces: 'radix:page'
 description: 'The main page component that gives the structural outline for every page.'
 props:
   type: object
@@ -17,9 +19,9 @@ props:
         type: string
       description: 'Additional utility classes added to the page component.'
 slots:
-  page_navigation:
-    title: Page Navigation
-    description: 'The navigation section of the page.'
+  page_header:
+    title: Page Header
+    description: 'The header section of the page.'
   page_content:
     title: Page Content
     description: 'The main content area of the page.'

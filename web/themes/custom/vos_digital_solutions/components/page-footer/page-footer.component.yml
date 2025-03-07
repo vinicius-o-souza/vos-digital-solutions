@@ -1,6 +1,8 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
 name: Page Footer
 status: experimental
+group: Bootstrap
+replaces: 'radix:page-footer'
 description: 'Component for the page footer.'
 props:
   type: object

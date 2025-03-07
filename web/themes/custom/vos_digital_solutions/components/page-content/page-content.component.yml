@@ -1,6 +1,8 @@
 $schema: https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json
 name: Page Content
 status: experimental
+group: Bootstrap
+replaces: 'radix:page-content'
 description: 'The main content component of a page, including a header section and main content area.'
 props:
   type: object
@@ -42,7 +44,7 @@ slots:
   sidebar_left:
     title: Sidebar Left
     description: 'The left sidebar of the main content area.'
-  content:
+  page_content:
     title: Content
     description: 'The actual content within the main content area.'
   sidebar_right:

@@ -14,10 +14,10 @@ enforce_prop_schemas: true
 
 regions:
   header_top: 'Header top'
-  header_middle: 'Header middle'
+  header_middle_left: 'Header middle left'
+  header_middle_right: 'Header middle right'
   header_bottom: 'Header bottom'
   sidebar_left: 'Sidebar left'
-  breadcrumb: 'Breadcrumb'
   content_top: 'Content top'
   content: 'Content'
   content_bottom: 'Content bottom'

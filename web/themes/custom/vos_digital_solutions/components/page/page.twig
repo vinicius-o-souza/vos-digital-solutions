@@ -3,7 +3,14 @@
  * @file
  * Template for the main page.
  *
+ * Available variables:
+ * - page_attributes: HTML attributes for the page component.
+ * - page_utility_classes: An array of utility classes that can be added to the page element.
  *
+ * Available blocks:
+ * - page_header
+ * - page_content
+ * - page_footer
  */
 #}
 {% set page_attributes = attributes ?: create_attribute() %}
@@ -24,7 +31,9 @@
   {% endblock %}
 
   {% block page_footer %}
-    {% include 'vos_digital_solutions:page-footer' %}
+    {% include 'vos_digital_solutions:page-footer' with {
+      footer_utility_classes: ['bg-primary']
+    } %}
 	{% endblock %}
 
 </div>
