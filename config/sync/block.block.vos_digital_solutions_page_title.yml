@@ -1,0 +1,20 @@
+uuid: 95101cac-b328-4d9d-bcdb-3c1a602278b1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vos_digital_solutions
+_core:
+  default_config_hash: ROfxGI5Roft3W2DCbRlnb4bfttbMfKkVAjmqtXPjgHY
+id: vos_digital_solutions_page_title
+theme: vos_digital_solutions
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

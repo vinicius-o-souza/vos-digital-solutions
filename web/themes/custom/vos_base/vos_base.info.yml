@@ -17,11 +17,11 @@ regions:
   header_middle_left: 'Header middle left'
   header_middle_right: 'Header middle right'
   header_bottom: 'Header bottom'
-  sidebar_left: 'Sidebar left'
   content_top: 'Content top'
+  sidebar_left: 'Sidebar left'
   content: 'Content'
-  content_bottom: 'Content bottom'
   sidebar_right: 'Sidebar right'
+  content_bottom: 'Content bottom'
   footer_top: 'Footer top'
   footer_middle: 'Footer middle'
   footer_bottom: 'Footer bottom'
@@ -34,23 +34,14 @@ libraries:
 ckeditor5-stylesheets:
   - build/css/main.style.css
 libraries-extend:
-  # Starterkit libraries
-  user/drupal.user:
-    - vos_base/user
-  core/drupal.dropbutton:
-    - vos_base/dropbutton
-  core/drupal.dialog:
-    - vos_base/dialog
-  file/drupal.file:
-    - vos_base/file
-  core/drupal.progress:
-    - vos_base/progress
-
-  # Radix libraries
   core/drupal.ajax:
     - vos_base/drupal.ajax
   core/drupal.checkbox:
     - vos_base/drupal.checkbox
+  # core/drupal.dialog:
+  #   - radix_starterkit/drupal.dialog
+  # core/drupal.dialog.ajax:
+  #   - radix_starterkit/drupal.dialog.ajax
   core/drupal.message:
     - vos_base/drupal.message
   core/drupal.progress:

@@ -1,0 +1,20 @@
+uuid: 1025e825-5428-4162-92a7-8fc95ff27c87
+langcode: en
+status: true
+dependencies:
+  theme:
+    - vos_digital_solutions
+id: vos_digital_solutions_tabs
+theme: vos_digital_solutions
+region: content_top
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 5f249d86-45ba-4b5f-8579-245b386f3a68
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - vos_base
+id: vos_base_footer_menu
+theme: vos_base
+region: footer_middle
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

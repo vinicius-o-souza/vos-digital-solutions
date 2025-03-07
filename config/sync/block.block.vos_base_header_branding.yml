@@ -1,0 +1,23 @@
+uuid: 4044b657-7d1f-498a-9cbe-030edbce5c08
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vos_base
+id: vos_base_header_branding
+theme: vos_base
+region: header_middle_left
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding Header'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

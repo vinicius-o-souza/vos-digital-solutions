@@ -1,0 +1,25 @@
+uuid: 9f638a46-c5f5-492e-bbc5-9c6d47e46111
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - vos_base
+id: vos_base_user_account_menu
+theme: vos_base
+region: header_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

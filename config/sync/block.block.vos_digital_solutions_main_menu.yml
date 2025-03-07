@@ -1,0 +1,27 @@
+uuid: d36313b4-1ad3-49d4-bc04-7570e791ae78
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - vos_digital_solutions
+_core:
+  default_config_hash: VwPNqajiJFfMvVvteRrWgAbZDtdF-sZCd0piUUnKdtQ
+id: vos_digital_solutions_main_menu
+theme: vos_digital_solutions
+region: header_middle_right
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: e4cc5ed2-08f8-4bae-8b71-2ed128a395d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vos_digital_solutions
+id: vos_digital_solutions_footer_branding
+theme: vos_digital_solutions
+region: footer_top
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding Footer'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: becd2450-d8b2-4152-9e87-8c125384a4a0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vos_digital_solutions
+_core:
+  default_config_hash: sJJqtpOinZhoMGeODzeMnrwpqQdYaIYKKR9TiOU07DQ
+id: vos_digital_solutions_content
+theme: vos_digital_solutions
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

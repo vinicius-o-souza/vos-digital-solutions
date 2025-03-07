@@ -1,0 +1,25 @@
+uuid: 06560ef8-15df-433e-b90e-5b8f5f08e20c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - vos_digital_solutions
+id: vos_digital_solutions_useraccountmenu
+theme: vos_digital_solutions
+region: header_top
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

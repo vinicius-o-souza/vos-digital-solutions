@@ -1,0 +1,25 @@
+uuid: 60c469d4-867e-4ca8-8652-0b803c769ff2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vos_digital_solutions
+_core:
+  default_config_hash: gjS2rhg0F8IcYqSNP8XS3LCrkY79o4nQvRjmdMSbz4M
+id: vos_digital_solutions_branding
+theme: vos_digital_solutions
+region: header_middle_left
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding Header'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

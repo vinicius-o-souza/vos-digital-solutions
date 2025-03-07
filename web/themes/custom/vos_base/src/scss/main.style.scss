@@ -10,8 +10,34 @@
 @import "base/helpers";
 @import "base/typography";
 
-// Layout
+// Include all starterkit components css here
 // -----------------------------------------------------------------------------
-@import "layout/footer";
-@import "layout/header";
-@import "layout/main-content";
+
+@import "components_starterkit/action-links";
+@import "components_starterkit/breadcrumb";
+@import "components_starterkit/button";
+@import "components_starterkit/container-inline";
+@import "components_starterkit/details";
+@import "components_starterkit/dialog";
+@import "components_starterkit/exposed-filters";
+@import "components_starterkit/field";
+@import "components_starterkit/file";
+@import "components_starterkit/form";
+@import "components_starterkit/icons";
+@import "components_starterkit/inline-form";
+@import "components_starterkit/item-list";
+@import "components_starterkit/link";
+@import "components_starterkit/links";
+@import "components_starterkit/menu";
+@import "components_starterkit/messages";
+@import "components_starterkit/more-link";
+@import "components_starterkit/node";
+@import "components_starterkit/pager";
+@import "components_starterkit/progress";
+@import "components_starterkit/tabledrag";
+@import "components_starterkit/tableselect";
+@import "components_starterkit/tablesort";
+@import "components_starterkit/tabs";
+@import "components_starterkit/textarea";
+@import "components_starterkit/ui-dialog";
+@import "components_starterkit/user";

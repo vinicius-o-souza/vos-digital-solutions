@@ -1,0 +1,22 @@
+uuid: ee3b506a-b783-4b9a-8dd0-e0cdd3bb1d03
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - vos_digital_solutions
+_core:
+  default_config_hash: 7XVGw-swVXDB1wwS3QXZYvXNk8BxenxXT6XILAyfVyo
+id: vos_digital_solutions_breadcrumbs
+theme: vos_digital_solutions
+region: content
+weight: -4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

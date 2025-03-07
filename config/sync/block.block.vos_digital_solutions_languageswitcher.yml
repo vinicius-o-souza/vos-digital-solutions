@@ -1,0 +1,20 @@
+uuid: 5fe76212-7bb8-4516-9524-28b8bdd1d440
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - vos_digital_solutions
+id: vos_digital_solutions_languageswitcher
+theme: vos_digital_solutions
+region: header_top
+weight: -6
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Language switcher'
+  label_display: '0'
+  provider: language
+visibility: {  }

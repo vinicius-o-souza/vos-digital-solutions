@@ -8,7 +8,6 @@ module:
   autosave_form: 0
   big_pipe: 0
   block: 0
-  bpmn_io: 0
   breakpoint: 0
   captcha: 0
   ckeditor5: 0
@@ -25,15 +24,6 @@ module:
   easy_breadcrumb: 0
   easy_email: 0
   easy_email_override: 0
-  eca: 0
-  eca_base: 0
-  eca_config: 0
-  eca_content: 0
-  eca_misc: 0
-  eca_modeller_bpmn: 0
-  eca_render: 0
-  eca_ui: 0
-  eca_user: 0
   editor: 0
   field: 0
   field_ui: 0
@@ -87,14 +77,15 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  vos: 0
   workflows: 0
-  eca_form: 1
   pathauto: 1
   content_translation: 10
   views: 10
 theme:
   claro: 0
   gin: 0
-  olivero: 0
   easy_email_theme: 0
-  drupal_cms_olivero: 0
+  radix: 0
+  vos_digital_solutions: 0
+  vos_base: 0
