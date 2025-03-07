@@ -29,29 +29,13 @@
  * technology. Headings allow screen-reader and keyboard only users to navigate
  * to or skip the links.
  * See http://juicystudio.com/article/screen-readers-display-none.php and
- * https://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
+ * http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
  */
 #}
 {%
-  set classes = [
-    'block',
-    'block-menu',
-    'navigation',
-    'menu--' ~ derivative_plugin_id|clean_class,
-  ]
+  include 'radix:block' with {
+    block_utility_classes: [
+      'block--system-menu',
+    ],
+  }
 %}
-{% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
-  {# Label. If not displayed, we still provide it for screen readers. #}
-  {% if not configuration.label_display %}
-    {% set title_attributes = title_attributes.addClass('visually-hidden') %}
-  {% endif %}
-  {{ title_prefix }}
-  <h2{{ title_attributes.setAttribute('id', heading_id) }}>{{ configuration.label }}</h2>
-  {{ title_suffix }}
-
-  {# Menu. #}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
-</nav>

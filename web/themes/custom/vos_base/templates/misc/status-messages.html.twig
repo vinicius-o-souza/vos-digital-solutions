@@ -6,7 +6,7 @@
  * Displays status, error, and warning messages, grouped by type.
  *
  * An invisible heading identifies the messages for assistive technology.
- * Sighted users see a colored box. See https://www.w3.org/TR/WCAG-TECHS/H69.html
+ * Sighted users see a colored box. See http://www.w3.org/TR/WCAG-TECHS/H69.html
  * for info.
  *
  * Add an ARIA label to the contentinfo area so that assistive technology
@@ -19,37 +19,36 @@
  *   - class: HTML classes.
  */
 #}
-<div data-drupal-messages>
-{% block messages %}
+{%
+  set types = {
+    status: 'success',
+    warning: 'warning',
+    error: 'danger',
+    info: 'info',
+  }
+%}
+
 {% for type, messages in message_list %}
-  {%
-    set classes = [
-      'messages',
-      'messages--' ~ type,
-    ]
-  %}
-  <div role="contentinfo" aria-label="{{ status_headings[type] }}"{{ attributes.addClass(classes)|without('role', 'aria-label') }}>
-    {% if type == 'error' %}
-      <div role="alert">
-    {% endif %}
-      {% if status_headings[type] %}
-        <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
-      {% endif %}
-      {% if messages|length > 1 %}
-        <ul class="messages__list">
-          {% for message in messages %}
-            <li class="messages__item">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% else %}
-        {{ messages|first }}
-      {% endif %}
-    {% if type == 'error' %}
-      </div>
-    {% endif %}
+  <div role="region" aria-label="{{ status_headings[type] }}"{{ attributes|without('role', 'aria-label') }}>
+    {%
+      embed 'radix:alert' with {
+        type: types[type],
+      }
+    %}
+      {% block content %}
+        {% if status_headings[type] %}
+          <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+        {% endif %}
+        {% if messages|length > 1 %}
+          <ul>
+            {% for message in messages %}
+              <li>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          {{ messages|first }}
+        {% endif %}
+      {% endblock %}
+    {% endembed %}
   </div>
-  {# Remove type specific classes. #}
-  {% set attributes = attributes.removeClass(classes) %}
 {% endfor %}
-{% endblock messages %}
-</div>

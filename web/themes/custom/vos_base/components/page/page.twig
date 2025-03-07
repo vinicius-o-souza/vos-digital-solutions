@@ -23,15 +23,15 @@
 <div {{ page_attributes.addClass(page_classes) }}>
 
   {% block page_header %}
-		{% include 'vos_digital_solutions:page-header' %}
+		{% include 'vos_base:page-header' %}
 	{% endblock %}
 
   {% block page_content %}
-    {% include 'vos_digital_solutions:page-content' %}
+    {% include 'vos_base:page-content' %}
   {% endblock %}
 
   {% block page_footer %}
-    {% include 'vos_digital_solutions:page-footer' with {
+    {% include 'vos_base:page-footer' with {
       footer_utility_classes: ['bg-primary']
     } %}
 	{% endblock %}

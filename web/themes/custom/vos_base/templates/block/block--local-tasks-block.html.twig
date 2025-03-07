@@ -1,14 +1,14 @@
-{% extends "block.html.twig" %}
 {#
 /**
  * @file
  * Theme override for tabs.
  */
 #}
-{% block content %}
-  {% if content %}
-    <nav class="tabs" role="navigation" aria-label="{{ 'Tabs'|t }}">
-      {{ content }}
-    </nav>
-  {% endif %}
-{% endblock %}
+{%
+  include 'radix:block' with {
+    block_utility_classes: [
+      'my-3',
+      'block--local-tasks',
+    ],
+  }
+%}

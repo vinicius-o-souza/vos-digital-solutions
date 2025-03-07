@@ -1,4 +1,3 @@
-{% extends "block.html.twig" %}
 {#
 /**
  * @file
@@ -13,18 +12,28 @@
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
 #}
-{% block content %}
-  {% if site_logo %}
-    <a href="{{ path('<front>') }}" rel="home" class="site-logo">
-      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" fetchpriority="high" />
-    </a>
-  {% endif %}
-  {% if site_name %}
-    <div class="site-name">
-      <a href="{{ path('<front>') }}" rel="home">{{ site_name }}</a>
-    </div>
-  {% endif %}
-  {% if site_slogan %}
-    <div class="site-slogan">{{ site_slogan }}</div>
-  {% endif %}
-{% endblock %}
+{%
+  embed 'radix:block' with {
+    block_utility_classes: [
+      'block--system-branding',
+    ],
+  }
+%}
+  {% block block_content %}
+    {%
+      include 'radix:navbar-brand' with {
+        text: site_name,
+        site_slogan,
+        image: site_logo,
+        width: '40px',
+        height: 'auto',
+        path: path('<front>'),
+        alt: elements.content.site_name['#markup'] ~ ' logo',
+        navbar_brand_utility_classes: [
+          'd-inline-flex',
+          'align-items-center',
+        ],
+      }
+    %}
+  {% endblock %}
+{% endembed %}

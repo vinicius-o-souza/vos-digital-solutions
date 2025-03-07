@@ -1,12 +1,40 @@
-name: vos_base
+name: VOS Base
+description: ''
+screenshot: screenshot.png
+'alt text': 'vos_base theme screenshot'
+core_version_requirement: ^11
+engine: twig
 type: theme
-'base theme': stable9
-version: 1.0.0
+'base theme': radix
+starterkit: true
+enforce_prop_schemas: true
+
+'interface translation project': vos_base
+'interface translation server pattern': themes/custom/vos_base/translations/%language.po
+
+regions:
+  header_top: 'Header top'
+  header_middle_left: 'Header middle left'
+  header_middle_right: 'Header middle right'
+  header_bottom: 'Header bottom'
+  sidebar_left: 'Sidebar left'
+  content_top: 'Content top'
+  content: 'Content'
+  content_bottom: 'Content bottom'
+  sidebar_right: 'Sidebar right'
+  footer_top: 'Footer top'
+  footer_middle: 'Footer middle'
+  footer_bottom: 'Footer bottom'
+
 libraries:
+  - vos_base/style
   - vos_base/base
   - vos_base/messages
   - core/normalize
+ckeditor5-stylesheets:
+  - build/css/main.style.css
 libraries-extend:
+  # Starterkit libraries
   user/drupal.user:
     - vos_base/user
   core/drupal.dropbutton:
@@ -17,6 +45,22 @@ libraries-extend:
     - vos_base/file
   core/drupal.progress:
     - vos_base/progress
-description: ''
-core_version_requirement: ^11
-generator: 'starterkit_theme:11.1.3'
+
+  # Radix libraries
+  core/drupal.ajax:
+    - vos_base/drupal.ajax
+  core/drupal.checkbox:
+    - vos_base/drupal.checkbox
+  core/drupal.message:
+    - vos_base/drupal.message
+  core/drupal.progress:
+    - vos_base/drupal.progress
+  clientside_validation_jquery/cv.jquery.validate:
+    - vos_base/jquery.validate
+
+version: 1.0.0
+project: radix
+datestamp: 1737210935
+generator: 'radix_starterkit:6.0.1'
+# Starterkit generator version
+# generator: 'starterkit_theme:11.1.3'

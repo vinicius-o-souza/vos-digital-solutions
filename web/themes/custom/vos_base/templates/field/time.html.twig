@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override for a date / time element.
+ * Default theme implementation for a date / time element.
  *
  * Available variables
  * - timestamp: (optional) A UNIX timestamp for the datetime attribute. If the
@@ -16,7 +16,14 @@
  *   DateFormatter::format() with one of the predefined 'html_*' formats.
  *
  * @see template_preprocess_time()
- * @see https://www.w3.org/TR/html5-author/the-time-element.html#attr-time-datetime
+ * @see http://www.w3.org/TR/html5-author/the-time-element.html#attr-time-datetime
  */
 #}
-<time{{ attributes.addClass('datetime') }}>{{ text }}</time>
+{%
+  set time_classes = [
+    'time',
+  ]|merge(time_utility_classes ?: [])
+%}
+{% set time_attributes = attributes ?: create_attribute() %}
+
+<time {{ time_attributes.addClass(time_class) }}>{{ text }}</time>

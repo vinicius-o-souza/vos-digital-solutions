@@ -11,8 +11,8 @@
  */
 #}
 {%
-set classes = [
-  style_name ? 'image-style-' ~ style_name|clean_class,
-]
+  include 'radix:image' with {
+    image_attributes: attributes,
+    responsive: true,
+  }
 %}
-<img{{ attributes.addClass(classes) }} />

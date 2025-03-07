@@ -8489,7 +8489,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkvos_digital_solutions"] = self["webpackChunkvos_digital_solutions"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkvos_base"] = self["webpackChunkvos_base"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();

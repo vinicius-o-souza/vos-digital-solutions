@@ -11,12 +11,20 @@
  * - message: A string containing information to be displayed.
  */
 #}
-{{ attach_library('vos_base/progress') }}
-<div class="progress" data-drupal-progress>
+<div class="progress-wrapper" aria-live="polite" data-drupal-progress>
   {% if label %}
     <div class="progress__label">{{ label }}</div>
   {% endif %}
-  <div class="progress__track"><div class="progress__bar" style="width: {{ percent }}%"></div></div>
-  <div class="progress__percentage">{{ percent }}%</div>
-  <div class="progress__description">{{ message }}</div>
+
+  {% include 'radix:progress' with {
+    animated: true,
+    striped: true,
+    label: percent,
+    aria_label: label,
+    valuenow: percent
+  } %}
+
+  {% if message %}
+    <div class="progress__description">{{ message }}</div>
+  {% endif %}
 </div>
