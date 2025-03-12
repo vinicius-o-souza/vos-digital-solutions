@@ -1,0 +1,19 @@
+@import "../../src/scss/init-components";
+
+.nav-item {
+  &.active {
+    .nav-link {
+      border-bottom: 2px solid var(--color-link-header-hover, #{$primary});
+      color: var(--color-link-header-hover, #{$primary});
+    }
+  }
+  .nav-link {
+    border: 2px solid transparent;
+    color: var(--color-link-header, #{$dark});
+    text-align: center;
+    &:hover {
+      border-bottom: 2px solid var(--color-link-header-hover, #{$primary});
+      color: var(--color-link-header-hover, #{$primary});
+    }
+  }
+}

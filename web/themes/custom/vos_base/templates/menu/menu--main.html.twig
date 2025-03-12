@@ -18,10 +18,9 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-{%
-  include 'radix:nav' with {
-    nav_utility_classes: [
-      'navbar-nav',
-    ],
-  }
-%}
+{% include 'vos_base:nav' with {
+  nav_utility_classes: [
+    'flex-column',
+    'flex-lg-row'
+  ]
+} %}

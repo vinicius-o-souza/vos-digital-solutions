@@ -7,7 +7,7 @@ dependencies:
 id: vos_base_page_title
 theme: vos_base
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

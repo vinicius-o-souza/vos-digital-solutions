@@ -7,7 +7,7 @@ dependencies:
 id: vos_digital_solutions_tabs
 theme: vos_digital_solutions
 region: content_top
-weight: -5
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

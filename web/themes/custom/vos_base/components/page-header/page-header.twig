@@ -38,9 +38,9 @@
 <header {{ header_attributes.addClass(header_classes) }}>
   {% if page.header_top %}
     {% block header_top %}
-      <div class="bg-light d-none d-lg-block page__header--top page__header--top-desktop">
+      <div class="d-none d-lg-block page__header--top page__header--top-desktop">
         <div class="container">
-          <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
+          <div class="d-flex flex-wrap justify-content-md-end align-items-md-center">
             {{ page.header_top }}
           </div>
         </div>
@@ -50,7 +50,8 @@
 
   {% block navbar %}
     {% embed 'vos_base:navbar' with {
-      navbar_utility_classes: ['bg-primary']
+      navbar_utility_classes: ['page__header--navbar'],
+      navbar_container_type: page_header_container_type,
     } %}
 
       {% block branding %}
@@ -62,11 +63,9 @@
       {% block navbar_content %}
         {% if page.header_middle_right %}
           {% block header_middle_right %}
-            <div class="bg-primary">
-              <div {{ page_header_container_attributes.addClass(page_header_container_classes) }}>
-                <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
-                  {{ page.header_middle_right }}
-                </div>
+            <div {{ page_header_container_attributes }}>
+              <div class="d-flex gap-5 flex-column flex-lg-row flex-wrap justify-content-center justify-content-lg-end align-items-center">
+                {{ page.header_middle_right }}
               </div>
             </div>
           {% endblock %}
@@ -85,9 +84,11 @@
 
   {% if page.header_bottom %}
     {% block header_bottom %}
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
-          {{ page.header_bottom }}
+      <div class="page__header--bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
+            {{ page.header_bottom }}
+          </div>
         </div>
       </div>
     {% endblock %}

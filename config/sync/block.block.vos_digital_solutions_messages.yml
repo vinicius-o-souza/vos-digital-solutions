@@ -10,13 +10,13 @@ _core:
   default_config_hash: gt5fvZ-Jh6uOs3VDSMOY_Dvmeumk6H-B14fW1ejG5IA
 id: vos_digital_solutions_messages
 theme: vos_digital_solutions
-region: content
+region: content_top
 weight: -5
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: 'Mensagens de status'
   label_display: '0'
   provider: system
 visibility: {  }

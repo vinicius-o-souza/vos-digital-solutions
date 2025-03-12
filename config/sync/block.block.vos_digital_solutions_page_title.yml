@@ -9,12 +9,12 @@ _core:
 id: vos_digital_solutions_page_title
 theme: vos_digital_solutions
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Título da página'
   label_display: '0'
   provider: core
 visibility: {  }

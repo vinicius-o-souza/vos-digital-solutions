@@ -26,13 +26,14 @@ regions:
   footer_middle: 'Footer middle'
   footer_bottom: 'Footer bottom'
 
+dependencies:
+  - vosix_components
+  - bootstrap_layout_builder
+
 libraries:
   - vos_base/style
-  - vos_base/base
-  - vos_base/messages
+  - vos_base/bootstrap_icons
   - core/normalize
-ckeditor5-stylesheets:
-  - build/css/main.style.css
 libraries-extend:
   core/drupal.ajax:
     - vos_base/drupal.ajax
@@ -48,6 +49,9 @@ libraries-extend:
     - vos_base/drupal.progress
   clientside_validation_jquery/cv.jquery.validate:
     - vos_base/jquery.validate
+
+ckeditor5-stylesheets:
+  - build/css/main.style.css
 
 version: 1.0.0
 project: radix

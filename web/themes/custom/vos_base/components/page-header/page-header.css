@@ -1,3 +1,43 @@
-.page__header{background-color:var(--bg-header)}
+/**
+ * Variables
+ * Variables should follow the $component-state-property-size formula for
+ * consistent naming. Examples:
+ * $nav-link-disabled-color
+ * $modal-content-box-shadow-xs 
+ *
+ * Customization:
+ * To customize Bootstrap variables:
+ * Copy the desired variable from node_modules/bootstrap/scss/_variables.scss
+ * @see https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
+ * Change the value and remove the !default flag.
+ * Examples:
+ * $body-bg: #000;
+ * $body-color: $gray-100;
+ */
+.page__header {
+  background-color: var(--bg-header);
+}
+.page__header--top {
+  background-color: var(--bg-header-top);
+}
+.page__header--top-mobile {
+  background-color: var(--bg-header);
+  border-top: 1px solid #E6E9EB;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+.page__header--top-mobile .dropdown-language .dropdown-toggle {
+  color: var(--color-link-header, #121313);
+}
+.page__header--top-mobile .dropdown-language .dropdown-toggle.show, .page__header--top-mobile .dropdown-language .dropdown-toggle:hover {
+  border-color: 2px solid var(--color-link-header-hover, #00698F);
+  color: var(--color-link-header-hover, #00698F);
+}
+.page__header--navbar {
+  background-color: var(--bg-header-navbar);
+}
+.page__header--bottom {
+  background-color: var(--bg-header-bottom);
+}
 
 /*# sourceMappingURL=page-header.css.map*/

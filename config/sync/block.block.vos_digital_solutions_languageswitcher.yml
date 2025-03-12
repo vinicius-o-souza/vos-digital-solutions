@@ -8,8 +8,8 @@ dependencies:
     - vos_digital_solutions
 id: vos_digital_solutions_languageswitcher
 theme: vos_digital_solutions
-region: header_top
-weight: -6
+region: header_middle_right
+weight: -4
 provider: null
 plugin: 'language_block:language_interface'
 settings:

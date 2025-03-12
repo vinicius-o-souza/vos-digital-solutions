@@ -21,9 +21,9 @@
 %}
 
 <footer {{ footer_attributes.addClass(footer_classes) }}>
-  <div class="container">
+  <div class="container py-4">
     <div class="d-flex flex-column justify-content-md-between align-items-md-center">
-      <div class="page__footer--top w-100">
+      <div class="page__footer--top w-100 py-4">
         <div class="d-flex flex-column flex-lg-row justify-content-md-between align-items-md-center">
           {% if page.footer_top %}
             {% block footer_top %}
@@ -33,7 +33,7 @@
         </div>
       </div>
 
-      <div class="page__footer--middle border-top border-info w-100">
+      <div class="page__footer--middle border-top border-light w-100 py-4">
         <div class="d-flex flex-column flex-lg-row justify-content-md-between align-items-md-center"></div>
           {% if page.footer_middle %}
             {% block footer_middle %}
@@ -43,7 +43,7 @@
         </div>
       </div>
 
-      <div class="page__footer--bottom border-top border-info w-100">
+      <div class="page__footer--bottom border-top border-light w-100 py-4">
         <div class="d-flex flex-column flex-lg-row justify-content-md-between align-items-md-center"></div>
           {% if page.footer_bottom %}
             {% block footer_bottom %}

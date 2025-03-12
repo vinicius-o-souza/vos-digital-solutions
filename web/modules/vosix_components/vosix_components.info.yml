@@ -1,0 +1,5 @@
+name: 'VOSIX Components'
+type: module
+description: 'A module to handle all the VOSIX components.'
+package: VOSIX
+core_version_requirement: ^10 || ^11

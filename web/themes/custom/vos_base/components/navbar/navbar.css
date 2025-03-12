@@ -1,1 +1,52 @@
+/**
+ * Variables
+ * Variables should follow the $component-state-property-size formula for
+ * consistent naming. Examples:
+ * $nav-link-disabled-color
+ * $modal-content-box-shadow-xs 
+ *
+ * Customization:
+ * To customize Bootstrap variables:
+ * Copy the desired variable from node_modules/bootstrap/scss/_variables.scss
+ * @see https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
+ * Change the value and remove the !default flag.
+ * Examples:
+ * $body-bg: #000;
+ * $body-color: $gray-100;
+ */
+.navbar .navbar-toggler {
+  border: none;
+  padding: 0;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler.collapsed .bi-list {
+  display: block;
+}
+.navbar .navbar-toggler.collapsed .bi-x-lg {
+  display: none;
+}
+.navbar .navbar-toggler .bi {
+  color: #121313;
+  font-size: 30px;
+}
+.navbar .navbar-toggler .bi-list {
+  display: none;
+}
+.navbar .navbar-toggler .bi-x-lg {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-collapse {
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar .navbar-collapse {
+    margin-top: 24px;
+  }
+}
 
+/*# sourceMappingURL=navbar.css.map*/

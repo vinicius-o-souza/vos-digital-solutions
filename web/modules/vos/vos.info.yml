@@ -1,5 +1,0 @@
-name: 'VOS Digital Solutions'
-type: module
-description: 'A module to help styling the theme.'
-package: Custom
-core_version_requirement: ^10 || ^11

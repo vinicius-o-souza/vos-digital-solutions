@@ -10,28 +10,6 @@ props:
     content_attributes:
       type: Drupal\Core\Template\Attribute
       description: 'HTML attributes for the main content area of the page.'
-    page_content_container_attributes:
-      type: Drupal\Core\Template\Attribute
-      description: 'HTML attributes for the main content area of the page.'
-    page_content_container_type:
-      type: ['string', 'boolean']
-      title: Container
-      description: container type
-      default: ''
-      enum:
-        - false
-        - ''
-        - sm
-        - md
-        - lg
-        - xl
-        - xxl
-        - fluid
-    page_content_container_utility_classes:
-      type: array
-      items:
-        type: string
-      description: 'Additional utility classes added to the main content area of the page.'
     page_main_utility_classes:
       type: array
       items:

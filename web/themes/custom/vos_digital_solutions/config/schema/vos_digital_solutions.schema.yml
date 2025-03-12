@@ -1,5 +1,0 @@
-# Schema for the configuration files of the vos_digital_solutions theme.
-
-vos_digital_solutions.settings:
-  type: theme_settings
-  label: 'vos_digital_solutions settings'

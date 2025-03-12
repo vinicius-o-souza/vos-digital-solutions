@@ -11,12 +11,12 @@ _core:
 id: vos_digital_solutions_content
 theme: vos_digital_solutions
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: 'Conteúdo da página principal'
   label_display: '0'
   provider: system
 visibility: {  }

@@ -11,7 +11,7 @@ _core:
 id: vos_digital_solutions_breadcrumbs
 theme: vos_digital_solutions
 region: content
-weight: -4
+weight: -5
 provider: null
 plugin: system_breadcrumb_block
 settings:

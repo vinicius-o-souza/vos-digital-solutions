@@ -1,3 +1,35 @@
+@import "../../src/scss/init-components";
+
 .page__header {
   background-color: var(--bg-header);
+
+  &--top {
+    background-color: var(--bg-header-top);
+
+    &-mobile {
+      background-color: var(--bg-header);
+      border-top: 1px solid #{$light};
+      margin-top: 16px;
+      padding-top: 16px;
+
+      .dropdown-language {
+        .dropdown-toggle {
+          color: var(--color-link-header, #{$dark});
+          &.show,
+          &:hover {
+            border-color: 2px solid var(--color-link-header-hover, #{$primary});
+            color: var(--color-link-header-hover, #{$primary});
+          }
+        }
+      }
+    }
+  }
+
+  &--navbar {
+    background-color: var(--bg-header-navbar);
+  }
+
+  &--bottom {
+    background-color: var(--bg-header-bottom);
+  }
 }

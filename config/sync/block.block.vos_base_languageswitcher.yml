@@ -9,7 +9,7 @@ dependencies:
 id: vos_base_languageswitcher
 theme: vos_base
 region: header_top
-weight: 0
+weight: -4
 provider: null
 plugin: 'language_block:language_interface'
 settings:
