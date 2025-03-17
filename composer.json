@@ -35,6 +35,7 @@
         "drupal/drupal_cms_starter": "~1.0.0",
         "drupal/project_browser": "@alpha",
         "drupal/radix": "^6.0",
+        "drupal/storybook": "^1.0",
         "drupal/webform": "@beta",
         "drush/drush": "^13"
     },

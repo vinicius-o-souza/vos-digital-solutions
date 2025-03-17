@@ -1,0 +1,124 @@
+{% stories Alert with {
+  title: 'Alert',
+  description: 'A customizable Bootstrap alert component with different types.',
+  args: {
+    type: 'primary',
+    heading: 'Default Alert Heading',
+    content: 'This is a default alert.',
+    dismissible: true,
+  },
+  argTypes: {
+    type: {
+      name: 'Type',
+      description: 'The Bootstrap alert type.',
+      control: 'select',
+      options: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']
+    },
+    heading: {
+      name: 'Heading',
+      description: 'The heading text for the alert.',
+      control: 'text'
+    },
+    dismissible: {
+      name: 'Dismissible',
+      description: 'Whether the alert is dismissible.',
+      control: 'boolean'
+    },
+    content: {
+      name: 'Content',
+      description: 'The content of the alert.'
+    }
+  }
+} %}
+
+
+  {% story primary with {
+    name: 'Primary',
+    args: {
+      type: 'primary',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+  {% story Secondary with {
+    name: 'Secondary',
+    args: {
+      type: 'secondary',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+  {% story Success with {
+    name: 'Success',
+    args: {
+      type: 'success',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+  {% story Danger with {
+    name: 'Danger',
+    args: {
+      type: 'danger',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+  {% story Warning with {
+    name: 'Warning',
+    args: {
+      type: 'warning',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+  {% story Info with {
+    name: 'info',
+    args: {
+      type: 'Info',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+  {% story Light with {
+    name: 'Light',
+    args: {
+      type: 'light',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+  {% story Dark with {
+    name: 'Dark',
+    args: {
+      type: 'dark',
+      heading: 'Alert Heading',
+      content: 'Alert Content'
+    }
+  } %}
+    {% include 'vos_base:alert' with { type: type, heading: heading, content: content } %}
+  {% endstory %}
+
+{% endstories %}
+
