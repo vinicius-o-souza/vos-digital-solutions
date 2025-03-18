@@ -1,0 +1,21 @@
+uuid: 48c90997-8092-47f4-b9ba-42b801861832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_dismissible
+    - paragraphs.paragraphs_type.alert
+id: paragraph.alert.field_dismissible
+field_name: field_dismissible
+entity_type: paragraph
+bundle: alert
+label: Dismissible
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

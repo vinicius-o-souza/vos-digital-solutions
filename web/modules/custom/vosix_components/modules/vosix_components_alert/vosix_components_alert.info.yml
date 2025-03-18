@@ -1,0 +1,5 @@
+name: 'VOSIX Component Alert'
+type: module
+description: 'A module to handle the VOSIX alert component.'
+package: VOSIX
+core_version_requirement: ^10 || ^11

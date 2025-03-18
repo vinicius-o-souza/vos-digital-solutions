@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Provides functionality for the Vosix Components Alert module.
+ */
+
+/**
+ * Implements hook_preprocess_paragraphs__alert().
+ */
+function vosix_components_alert_preprocess_paragraph__alert(&$variables) {
+  vosix_components_preprocess_paragraphs($variables);
+}

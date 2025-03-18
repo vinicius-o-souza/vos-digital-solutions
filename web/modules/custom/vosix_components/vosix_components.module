@@ -2,7 +2,7 @@
 
 /**
  * @file
- * VOS module.
+ * Provides functionality for the Vosix Components module.
  */
 
 /**
@@ -15,4 +15,27 @@ function vos_theme() {
       'render element' => 'element',
     ],
   ];
+}
+
+/**
+ * Implements hook_preprocess_paragraphs().
+ */
+function vosix_components_preprocess_paragraphs(array &$variables): void {
+  /** @var \Drupal\paragraphs\Entity\Paragraph|null $paragraph */
+  $paragraph = $variables['paragraph'] ?? NULL;
+  if (!$paragraph) {
+    return;
+  }
+
+  if ($paragraph->hasField('field_type')) {
+    $type = $variables['content']['field_type'];
+    if ($type['#formatter'] == 'list_key') {
+      $variables['type'] = $type[0]['#markup'] ?? '';
+    }
+  }
+
+  if ($paragraph->hasField('field_dismissible')) {
+    $dismissible = $variables['content']['field_dismissible']; 
+    $variables['dismissible'] = $dismissible[0]['#markup'] == 1 ? TRUE : FALSE;
+  }
 }

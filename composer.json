@@ -33,9 +33,11 @@
         "drupal/drupal_cms_project": "~1.0.0",
         "drupal/drupal_cms_seo_tools": "~1.0.1",
         "drupal/drupal_cms_starter": "~1.0.0",
+        "drupal/paragraphs": "^1.19",
         "drupal/project_browser": "@alpha",
         "drupal/radix": "^6.0",
         "drupal/storybook": "^1.0",
+        "drupal/twig_tweak": "^3.4",
         "drupal/webform": "@beta",
         "drush/drush": "^13"
     },

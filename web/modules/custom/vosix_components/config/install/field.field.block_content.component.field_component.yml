@@ -1,0 +1,29 @@
+uuid: bb462258-d8d0-4882-844e-ab65af271d4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.component
+    - field.storage.block_content.field_component
+  module:
+    - entity_reference_revisions
+id: block_content.component.field_component
+field_name: field_component
+entity_type: block_content
+bundle: component
+label: Component
+description: 'The component that you want to build'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 1
+    target_bundles_drag_drop:
+      accordion:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions
