@@ -39,17 +39,18 @@
   * @ingroup themeable
   */
 #}
-{% extends '@vosix_components/paragraph.html.twig'%}
-
-{% block content %}
-  {% set heading = content.field_title %}
-  {% set body = content.field_body %}
-
-  {% include 'radix:alert' with {
-    type: type ?? 'primary',
-    heading: heading,
-    content: body,
-    dismissible: dismissible ?? false,
-    alert_utility_classes: custom_classes
-  } %}
-{% endblock %}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.alert.field_body
+    - field.field.paragraph.alert.field_custom_classes
     - field.field.paragraph.alert.field_dismissible
     - field.field.paragraph.alert.field_title
     - field.field.paragraph.alert.field_type
@@ -21,6 +22,14 @@ content:
     region: content
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_custom_classes:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
   field_dismissible:

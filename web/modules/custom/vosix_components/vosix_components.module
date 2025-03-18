@@ -27,6 +27,13 @@ function vosix_components_preprocess_paragraphs(array &$variables): void {
     return;
   }
 
+  if ($paragraph->hasField('field_custom_classes')) {
+    $custom_classes = $variables['content']['field_custom_classes'];
+    $custom_classes = $custom_classes[0]['#context']['value'] ?? '';
+    $custom_classes = explode(' ', $custom_classes);
+    $variables['custom_classes'] = $custom_classes;
+  }
+
   if ($paragraph->hasField('field_type')) {
     $type = $variables['content']['field_type'];
     if ($type['#formatter'] == 'list_key') {
