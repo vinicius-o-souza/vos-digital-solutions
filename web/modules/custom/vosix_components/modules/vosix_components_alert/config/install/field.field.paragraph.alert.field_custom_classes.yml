@@ -10,7 +10,7 @@ field_name: field_custom_classes
 entity_type: paragraph
 bundle: alert
 label: 'Custom Classes'
-description: 'Add any necessary custom classes you need.'
+description: 'A field for adding custom CSS classes, allowing greater flexibility in styling and customization of the component. For example: text-center, text-right, font-weight-bold, text-capitalize. Explore more options in the <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap documentation</a>.'
 required: false
 translatable: false
 default_value: {  }

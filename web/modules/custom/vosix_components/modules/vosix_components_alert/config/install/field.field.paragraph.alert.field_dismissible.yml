@@ -10,7 +10,7 @@ field_name: field_dismissible
 entity_type: paragraph
 bundle: alert
 label: Dismissible
-description: ''
+description: 'A boolean field that enables or disables the dismissible feature, allowing users to close or hide the component with a close button.'
 required: false
 translatable: false
 default_value: {  }

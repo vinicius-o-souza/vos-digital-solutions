@@ -12,7 +12,7 @@ field_name: field_type
 entity_type: paragraph
 bundle: alert
 label: Type
-description: 'The type of alert can be any of the Bootstrap classic types.'
+description: ''
 required: true
 translatable: false
 default_value: {  }

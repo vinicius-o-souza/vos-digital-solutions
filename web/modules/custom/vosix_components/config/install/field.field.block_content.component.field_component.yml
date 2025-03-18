@@ -12,7 +12,7 @@ field_name: field_component
 entity_type: block_content
 bundle: component
 label: Component
-description: 'The component that you want to build'
+description: ''
 required: false
 translatable: false
 default_value: {  }
@@ -25,5 +25,11 @@ settings:
     target_bundles_drag_drop:
       accordion:
         weight: 2
+        enabled: false
+      accordion_item:
+        weight: 5
+        enabled: false
+      alert:
+        weight: 6
         enabled: false
 field_type: entity_reference_revisions
