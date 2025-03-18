@@ -18,9 +18,19 @@ function vos_theme() {
 }
 
 /**
- * Implements hook_preprocess_paragraphs().
+ * Implements hook_preprocess_paragraph().
  */
-function vosix_components_preprocess_paragraphs(array &$variables): void {
+function vosix_components_preprocess_paragraph(array &$variables) {
+  _vosix_components_preprocess_paragraphs($variables);
+}
+
+/**
+ * Preprocesses variables for paragraphs.
+ * 
+ * @param array $variables
+ *   The variables to preprocess.
+ */
+function _vosix_components_preprocess_paragraphs(array &$variables): void {
   /** @var \Drupal\paragraphs\Entity\Paragraph|null $paragraph */
   $paragraph = $variables['paragraph'] ?? NULL;
   if (!$paragraph) {

@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Provides functionality for the Vosix Components Accordion module.
+ */
+
+/**
+ * Implements hook_preprocess_paragraph__HOOK().
+ */
+function vosix_components_accordion_preprocess_paragraph__accordion(array &$variables) {
+  /** @var \Drupal\paragraphs\Entity\Paragraph|null $paragraph */
+  $paragraph = $variables['paragraph'] ?? NULL;
+  if (!$paragraph) {
+    return;
+  }
+
+  $items = $variables['content']['field_accordion_items'];
+  $counter = 0;
+  while(isset($items[$counter])) {
+    $item = $items[$counter];
+    /** @var \Drupal\paragraphs\Entity\Paragraph|null $paragraph */
+    $paragraph = $item['#paragraph'] ?? NULL;
+    if (!$paragraph) {
+      continue;
+    }
+
+    $title = $paragraph->get('field_title')->value;
+    $body = $paragraph->get('field_body')->value;
+
+    $variables['items'][$counter] = [
+      'title' => $title,
+      'content' => $body
+    ];
+    
+    $counter++;
+  }
+}

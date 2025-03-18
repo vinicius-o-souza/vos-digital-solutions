@@ -1,0 +1,19 @@
+uuid: 95b3b814-3474-4fc9-9d08-a5be7fccab18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: accordion
+label: Title
+description: 'The title of the accordion'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

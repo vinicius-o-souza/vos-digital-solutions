@@ -1,0 +1,5 @@
+name: 'VOSIX Component Accordion'
+type: module
+description: 'A module to handle the VOSIX accordion component.'
+package: VOSIX
+core_version_requirement: ^10 || ^11
