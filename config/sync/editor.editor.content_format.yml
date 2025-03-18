@@ -13,21 +13,22 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
-      - heading
       - bold
       - italic
-      - blockQuote
       - link
+      - blockQuote
       - bulletedList
       - numberedList
+      - alignment
       - indent
       - outdent
-      - alignment
       - insertTable
-      - drupalMedia
       - undo
       - redo
       - removeFormat
+      - horizontalLine
+      - drupalMedia
+      - heading
       - sourceEditing
   plugins:
     ckeditor5_alignment:
@@ -38,6 +39,7 @@ settings:
         - right
     ckeditor5_heading:
       enabled_headings:
+        - heading1
         - heading2
         - heading3
         - heading4

@@ -5,9 +5,9 @@ module:
   automated_cron: 0
   automatic_updates: 0
   automatic_updates_extensions: 0
-  autosave_form: 0
   big_pipe: 0
   block: 0
+  block_content: 0
   bootstrap_layout_builder: 0
   bootstrap_styles: 0
   breakpoint: 0
@@ -27,6 +27,7 @@ module:
   easy_email: 0
   easy_email_override: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
@@ -69,6 +70,7 @@ module:
   sam: 0
   scheduler: 0
   scheduler_content_moderation_integration: 0
+  storybook: 0
   svg_image: 0
   symfony_mailer_lite: 0
   system: 0
@@ -77,14 +79,18 @@ module:
   token: 0
   toolbar: 0
   trash: 0
+  twig_tweak: 0
   update: 0
   user: 0
   views_ui: 0
   vosix_components: 0
+  vosix_components_accordion: 0
+  vosix_components_alert: 0
   workflows: 0
   pathauto: 1
   content_translation: 10
   views: 10
+  paragraphs: 11
 theme:
   claro: 0
   gin: 0

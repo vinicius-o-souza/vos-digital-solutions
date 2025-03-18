@@ -1,0 +1,8 @@
+uuid: 6dc519c3-b631-470f-82b9-b1c04b1537c8
+langcode: en
+status: true
+dependencies: {  }
+id: basic
+label: Basic
+revision: false
+description: 'A basic block type with a title and body.'
