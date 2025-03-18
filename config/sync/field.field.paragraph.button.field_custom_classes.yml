@@ -1,0 +1,19 @@
+uuid: f64a462a-030f-413d-95e8-15fe1bd8bd8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_custom_classes
+    - paragraphs.paragraphs_type.button
+id: paragraph.button.field_custom_classes
+field_name: field_custom_classes
+entity_type: paragraph
+bundle: button
+label: 'Custom Classes'
+description: 'A field for adding custom CSS classes, allowing greater flexibility in styling and customization of the component. For example: text-center, text-right, font-weight-bold, text-capitalize. Explore more options in the <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap documentation</a>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

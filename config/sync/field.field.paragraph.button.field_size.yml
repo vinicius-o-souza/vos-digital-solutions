@@ -1,0 +1,21 @@
+uuid: 34cca59b-0902-4836-99c6-b93eadb622a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_size
+    - paragraphs.paragraphs_type.button
+  module:
+    - options
+id: paragraph.button.field_size
+field_name: field_size
+entity_type: paragraph
+bundle: button
+label: Size
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

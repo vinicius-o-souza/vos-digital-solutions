@@ -1,0 +1,5 @@
+name: 'VOSIX Component Button'
+type: module
+description: 'A module to handle the VOSIX button component.'
+package: VOSIX
+core_version_requirement: ^10 || ^11
