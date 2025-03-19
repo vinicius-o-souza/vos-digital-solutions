@@ -1,0 +1,12 @@
+uuid: dde473c6-0313-4660-814d-e4e302c4333f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:75afc6c4-3b75-418d-ad5e-a6b0889aaa9e'
+id: media
+label: Media
+icon_uuid: 75afc6c4-3b75-418d-ad5e-a6b0889aaa9e
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktaW1hZ2UiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTYuMDAyIDUuNWExLjUgMS41IDAgMSAxLTMgMCAxLjUgMS41IDAgMCAxIDMgMCIvPgogIDxwYXRoIGQ9Ik0yLjAwMiAxYTIgMiAwIDAgMC0yIDJ2MTBhMiAyIDAgMCAwIDIgMmgxMmEyIDIgMCAwIDAgMi0yVjNhMiAyIDAgMCAwLTItMnptMTIgMWExIDEgMCAwIDEgMSAxdjYuNWwtMy43NzctMS45NDdhLjUuNSAwIDAgMC0uNTc3LjA5M2wtMy43MSAzLjcxLTIuNjYtMS43NzJhLjUuNSAwIDAgMC0uNjMuMDYyTDEuMDAyIDEyVjNhMSAxIDAgMCAxIDEtMXoiLz4KPC9zdmc+'
+description: 'A flexible Media component that allows content editors to display images or videos.'
+behavior_plugins: {  }

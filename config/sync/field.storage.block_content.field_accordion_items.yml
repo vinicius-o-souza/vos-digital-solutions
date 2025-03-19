@@ -1,13 +1,14 @@
-uuid: 725d600e-6c3d-4e6f-af42-3adf183be081
+uuid: 8cdcb8f6-d912-4129-8831-972f70ad5b18
 langcode: en
 status: true
 dependencies:
   module:
+    - block_content
     - entity_reference_revisions
     - paragraphs
-id: paragraph.field_accordion_items
+id: block_content.field_accordion_items
 field_name: field_accordion_items
-entity_type: paragraph
+entity_type: block_content
 type: entity_reference_revisions
 settings:
   target_type: paragraph
