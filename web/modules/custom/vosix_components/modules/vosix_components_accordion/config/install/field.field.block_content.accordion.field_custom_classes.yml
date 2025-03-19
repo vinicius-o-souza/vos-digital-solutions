@@ -1,13 +1,13 @@
-uuid: 7f94dca9-bb91-49f7-af46-c21827d6b075
+uuid: 34290db8-213e-402a-b49d-73cb7766cf2a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_custom_classes
-    - paragraphs.paragraphs_type.accordion
-id: paragraph.accordion.field_custom_classes
+    - block_content.type.accordion
+    - field.storage.block_content.field_custom_classes
+id: block_content.accordion.field_custom_classes
 field_name: field_custom_classes
-entity_type: paragraph
+entity_type: block_content
 bundle: accordion
 label: 'Custom Classes'
 description: 'A field for adding custom CSS classes, allowing greater flexibility in styling and customization of the component. For example: text-center, text-right, font-weight-bold, text-capitalize. Explore more options in the <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap documentation</a>.'

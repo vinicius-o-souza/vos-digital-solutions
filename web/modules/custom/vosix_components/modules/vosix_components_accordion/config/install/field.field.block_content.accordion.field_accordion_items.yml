@@ -1,20 +1,20 @@
-uuid: b1f939c2-8dd4-4c28-a0d8-f32510774808
+uuid: c4ca6a90-bf11-4a2b-806b-fc37837df933
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_accordion_items
-    - paragraphs.paragraphs_type.accordion
+    - block_content.type.accordion
+    - field.storage.block_content.field_accordion_items
     - paragraphs.paragraphs_type.accordion_item
   module:
     - entity_reference_revisions
-id: paragraph.accordion.field_accordion_items
+id: block_content.accordion.field_accordion_items
 field_name: field_accordion_items
-entity_type: paragraph
+entity_type: block_content
 bundle: accordion
 label: 'Accordion Items'
-description: ''
-required: true
+description: "A collapsible content item, allowing you to create multiple expandable sections with ease.\t"
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -25,13 +25,19 @@ settings:
       accordion_item: accordion_item
     negate: 0
     target_bundles_drag_drop:
-      accordion:
-        weight: 4
-        enabled: false
       accordion_item:
-        weight: 5
+        weight: 6
         enabled: true
       alert:
-        weight: 6
+        weight: 7
+        enabled: false
+      button:
+        weight: 8
+        enabled: false
+      heading:
+        weight: 9
+        enabled: false
+      media:
+        weight: 10
         enabled: false
 field_type: entity_reference_revisions

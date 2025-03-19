@@ -1,0 +1,8 @@
+uuid: b18bb9c7-d401-40a8-9330-3e2da351c7e6
+langcode: en
+status: true
+dependencies: {  }
+id: accordion
+label: Accordion
+revision: false
+description: 'A dynamic Bootstrap Accordion component for organizing content into expandable and collapsible sections.'

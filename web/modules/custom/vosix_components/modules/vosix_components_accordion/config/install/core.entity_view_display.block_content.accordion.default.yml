@@ -1,16 +1,15 @@
-uuid: b198f1f9-d51e-48ec-813a-665a2ca151f6
+uuid: f7049713-f71d-475e-a1ec-c8ddac94d9e1
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion.field_accordion_items
-    - field.field.paragraph.accordion.field_custom_classes
-    - field.field.paragraph.accordion.field_title
-    - paragraphs.paragraphs_type.accordion
+    - block_content.type.accordion
+    - field.field.block_content.accordion.field_accordion_items
+    - field.field.block_content.accordion.field_custom_classes
   module:
     - entity_reference_revisions
-id: paragraph.accordion.default
-targetEntityType: paragraph
+id: block_content.accordion.default
+targetEntityType: block_content
 bundle: accordion
 mode: default
 content:
@@ -29,14 +28,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 2
-    region: content
-  field_title:
-    type: string
-    label: visually_hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
     weight: 0
     region: content
-hidden: {  }
+hidden:
+  langcode: true
