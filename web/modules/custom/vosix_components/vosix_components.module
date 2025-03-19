@@ -25,6 +25,13 @@ function vosix_components_preprocess_paragraph(array &$variables) {
 }
 
 /**
+ * Implements hook_preprocess_block().
+ */
+function vosix_components_preprocess_block(array &$variables) {
+  _vosix_components_preprocess_block_content($variables);
+}
+
+/**
  * Preprocesses variables for paragraphs.
  * 
  * @param array $variables
@@ -57,6 +64,50 @@ function _vosix_components_preprocess_paragraphs(array &$variables): void {
   }
 
   if ($paragraph->hasField('field_url')) {
+    $url = $variables['content']['field_url'] ?? [];
+    if (isset($url[0])) {
+      $url = [
+        'title' => $url[0]['#title'],
+        'url' => $url[0]['#url'],
+      ];
+      $variables['url'] = $url; 
+    }
+  }
+}
+
+/**
+ * Preprocesses variables for blocks.
+ * 
+ * @param array $variables
+ *   The variables to preprocess.
+ */
+function _vosix_components_preprocess_block_content(array &$variables): void {
+  /** @var \Drupal\block_content\Entity\BlockContent|null $block */
+  $block = $variables['content']['#block_content'] ?? NULL;
+  if (!$block) {
+    return;
+  }
+
+  if ($block->hasField('field_custom_classes')) {
+    $custom_classes = $variables['content']['field_custom_classes'];
+    $custom_classes = $custom_classes[0]['#context']['value'] ?? '';
+    $custom_classes = explode(' ', $custom_classes);
+    $variables['custom_classes'] = $custom_classes;
+  }
+
+  if ($block->hasField('field_type')) {
+    $type = $variables['content']['field_type'];
+    if ($type['#formatter'] == 'list_key') {
+      $variables['type'] = $type[0]['#markup'] ?? '';
+    }
+  }
+
+  if ($block->hasField('field_dismissible')) {
+    $dismissible = $variables['content']['field_dismissible']; 
+    $variables['dismissible'] = $dismissible[0]['#markup'] == 1 ? TRUE : FALSE;
+  }
+
+  if ($block->hasField('field_url')) {
     $url = $variables['content']['field_url'] ?? [];
     if (isset($url[0])) {
       $url = [

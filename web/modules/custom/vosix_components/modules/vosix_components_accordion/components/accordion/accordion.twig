@@ -10,9 +10,6 @@
   * https://github.com/twbs/bootstrap/blob/v5.3.0/dist/css/bootstrap.css#L214
   *
   * Available properties:
-  * - title (string) (default: '')
-  * - title_tag (string) (default: 'h2')
-  * - title_attributes: (drupal attrs)
   * - id (int) (default: accordion-random(1000))
   * - flush (boolean) (default: false)
   * - items (array) (default: []): format: [
@@ -31,9 +28,6 @@
   *
   */
 #}
-{% set title = title|default('') %}
-{% set title_tag = title_tag|default('h2') %}
-{% set title_attributes = title_attributes ?: create_attribute() %}
 {% set id = id|default('accordion-' ~ random(1000)) %}
 {% set flush = flush ?? false %}
 {% set items = items|default([]) %}
@@ -61,15 +55,6 @@
 
 {% if items is not empty %}
   <div {{ accordion_attributes.addClass(accordion_classes) }}>
-    {% if title is not empty %}
-      {%
-        include 'radix:heading' with {
-          heading_html_tag: 'h2',
-          content: title,
-          heading_attributes: title_attributes,
-        }
-      %}
-    {% endif %}
 
     {% for item in items %}
       {% set content = item.content|default('') %}
