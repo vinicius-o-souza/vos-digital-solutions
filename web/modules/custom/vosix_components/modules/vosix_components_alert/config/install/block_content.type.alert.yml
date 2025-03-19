@@ -1,0 +1,8 @@
+uuid: e31f2b21-aba1-440c-9be9-9c636fc3644f
+langcode: en
+status: true
+dependencies: {  }
+id: alert
+label: Alert
+revision: false
+description: 'A flexible Bootstrap Alert component for displaying contextual messages with customizable styles and dismissible options.'

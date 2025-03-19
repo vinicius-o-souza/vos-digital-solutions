@@ -1,13 +1,13 @@
-uuid: 48c90997-8092-47f4-b9ba-42b801861832
+uuid: 1a65e987-9459-4ec2-ac97-081aae9cb8eb
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_dismissible
-    - paragraphs.paragraphs_type.alert
-id: paragraph.alert.field_dismissible
+    - block_content.type.alert
+    - field.storage.block_content.field_dismissible
+id: block_content.alert.field_dismissible
 field_name: field_dismissible
-entity_type: paragraph
+entity_type: block_content
 bundle: alert
 label: Dismissible
 description: 'A boolean field that enables or disables the dismissible feature, allowing users to close or hide the component with a close button.'

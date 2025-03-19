@@ -1,13 +1,13 @@
-uuid: 7f8a1139-07a2-432c-9fa9-2ca3f54cf4e2
+uuid: 5bcdde67-8e88-471f-b1af-e216961d62b6
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_custom_classes
-    - paragraphs.paragraphs_type.alert
-id: paragraph.alert.field_custom_classes
+    - block_content.type.alert
+    - field.storage.block_content.field_custom_classes
+id: block_content.alert.field_custom_classes
 field_name: field_custom_classes
-entity_type: paragraph
+entity_type: block_content
 bundle: alert
 label: 'Custom Classes'
 description: 'A field for adding custom CSS classes, allowing greater flexibility in styling and customization of the component. For example: text-center, text-right, font-weight-bold, text-capitalize. Explore more options in the <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">Bootstrap documentation</a>.'

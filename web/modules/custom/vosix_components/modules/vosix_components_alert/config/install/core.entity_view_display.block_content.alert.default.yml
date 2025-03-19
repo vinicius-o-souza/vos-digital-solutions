@@ -1,28 +1,28 @@
-uuid: fc2f5aad-e07f-4f5d-ace5-510ea12b6ed9
+uuid: 8c8b3eb4-a2c8-4d1a-80db-1993b6c7a695
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.alert.field_body
-    - field.field.paragraph.alert.field_custom_classes
-    - field.field.paragraph.alert.field_dismissible
-    - field.field.paragraph.alert.field_title
-    - field.field.paragraph.alert.field_type
-    - paragraphs.paragraphs_type.alert
+    - block_content.type.alert
+    - field.field.block_content.alert.body
+    - field.field.block_content.alert.field_custom_classes
+    - field.field.block_content.alert.field_dismissible
+    - field.field.block_content.alert.field_title
+    - field.field.block_content.alert.field_type
   module:
     - options
     - text
-id: paragraph.alert.default
-targetEntityType: paragraph
+id: block_content.alert.default
+targetEntityType: block_content
 bundle: alert
 mode: default
 content:
-  field_body:
+  body:
     type: text_default
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_custom_classes:
     type: string
@@ -30,17 +30,17 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_dismissible:
     type: boolean
-    label: hidden
+    label: visually_hidden
     settings:
       format: boolean
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_title:
     type: string
@@ -55,6 +55,7 @@ content:
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
-hidden: {  }
+hidden:
+  langcode: true

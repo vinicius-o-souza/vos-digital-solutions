@@ -1,0 +1,42 @@
+uuid: 004628ae-e62e-4b6c-b54b-fbbe067dfd9f
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - options
+id: block_content.field_type
+field_name: field_type
+entity_type: block_content
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: primary
+      label: Primary
+    -
+      value: secondary
+      label: Secondary
+    -
+      value: success
+      label: Success
+    -
+      value: danger
+      label: Danger
+    -
+      value: warning
+      label: Warning
+    -
+      value: info
+      label: Info
+    -
+      value: dark
+      label: Dark
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

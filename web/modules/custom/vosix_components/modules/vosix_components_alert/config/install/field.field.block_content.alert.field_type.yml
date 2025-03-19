@@ -1,19 +1,19 @@
-uuid: 7ea5fd1a-64be-4683-bab3-48502556d0e3
+uuid: 841955ed-ac7c-4c23-8b8e-b6850cb28fa4
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_type
-    - paragraphs.paragraphs_type.alert
+    - block_content.type.alert
+    - field.storage.block_content.field_type
   module:
     - options
-id: paragraph.alert.field_type
+id: block_content.alert.field_type
 field_name: field_type
-entity_type: paragraph
+entity_type: block_content
 bundle: alert
 label: Type
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

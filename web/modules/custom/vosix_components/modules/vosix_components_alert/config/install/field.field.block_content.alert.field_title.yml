@@ -1,13 +1,13 @@
-uuid: 1880e302-5deb-404d-acad-20d251c724d3
+uuid: 423547f1-c711-4a6a-8c0b-117a50075f92
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.alert
-id: paragraph.alert.field_title
+    - block_content.type.alert
+    - field.storage.block_content.field_title
+id: block_content.alert.field_title
 field_name: field_title
-entity_type: paragraph
+entity_type: block_content
 bundle: alert
 label: Title
 description: ''

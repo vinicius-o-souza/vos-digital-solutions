@@ -1,12 +1,12 @@
-uuid: 252b806a-a613-4abe-8431-37beda9c0b18
+uuid: 58b5a95c-d328-4ec5-a6e7-da311ac4e390
 langcode: en
 status: true
 dependencies:
   module:
-    - paragraphs
-id: paragraph.field_dismissible
+    - block_content
+id: block_content.field_dismissible
 field_name: field_dismissible
-entity_type: paragraph
+entity_type: block_content
 type: boolean
 settings: {  }
 module: core
