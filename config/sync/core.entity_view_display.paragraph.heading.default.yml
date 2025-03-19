@@ -1,0 +1,54 @@
+uuid: e5aadeaf-2386-4ce7-a5ff-0add3674bd5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.heading.field_custom_classes
+    - field.field.paragraph.heading.field_heading_level
+    - field.field.paragraph.heading.field_title
+    - field.field.paragraph.heading.field_url
+    - paragraphs.paragraphs_type.heading
+  module:
+    - link
+    - options
+id: paragraph.heading.default
+targetEntityType: paragraph
+bundle: heading
+mode: default
+content:
+  field_custom_classes:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_heading_level:
+    type: list_key
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_url:
+    type: link
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

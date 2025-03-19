@@ -87,6 +87,7 @@ module:
   vosix_components_accordion: 0
   vosix_components_alert: 0
   vosix_components_button: 0
+  vosix_components_heading: 0
   workflows: 0
   pathauto: 1
   content_translation: 10

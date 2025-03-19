@@ -39,17 +39,5 @@
   * @ingroup themeable
   */
 #}
-{% extends '@vosix_components/paragraph.html.twig'%}
 
-{% block content %}
-  {% set title = content.field_title %}
-  {% set body = content.field_body %}
-
-  {% include 'radix:alert' with {
-    type: type ?? 'primary',
-    heading: title,
-    content: body,
-    dismissible: dismissible ?? false,
-    alert_utility_classes: custom_classes
-  } %}
-{% endblock %}
+{% include '@vosix_components_heading/paragraph--heading.html.twig' %}

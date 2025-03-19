@@ -1,0 +1,12 @@
+uuid: 0f625329-31d1-43c2-9652-86467cb19ebb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:dddc1a53-81aa-4bba-9477-94bc64de2575'
+id: heading
+label: Heading
+icon_uuid: dddc1a53-81aa-4bba-9477-94bc64de2575
+icon_default: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iY3VycmVudENvbG9yIiBjbGFzcz0iYmkgYmktdHlwZS1oMSIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNNy42NDggMTNWM0g2LjN2NC4yMzRIMS4zNDhWM0gwdjEwaDEuMzQ4VjguNDIxSDYuM1YxM3pNMTQgMTNWM2gtMS4zMzNsLTIuMzgxIDEuNzY2VjYuMTJMMTIuNiA0LjQ0M2guMDY2VjEzeiIvPgo8L3N2Zz4='
+description: 'A flexible Heading component that allows content editors to add structured headings. Supports different levels (h1, h2, h3, h4, h5, h6), styles, and alignments to enhance content hierarchy and readability.'
+behavior_plugins: {  }

@@ -55,4 +55,15 @@ function _vosix_components_preprocess_paragraphs(array &$variables): void {
     $dismissible = $variables['content']['field_dismissible']; 
     $variables['dismissible'] = $dismissible[0]['#markup'] == 1 ? TRUE : FALSE;
   }
+
+  if ($paragraph->hasField('field_url')) {
+    $url = $variables['content']['field_url'] ?? [];
+    if (isset($url[0])) {
+      $url = [
+        'title' => $url[0]['#title'],
+        'url' => $url[0]['#url'],
+      ];
+      $variables['url'] = $url; 
+    }
+  }
 }
