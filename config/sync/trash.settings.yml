@@ -2,3 +2,4 @@ enabled_entity_types: {  }
 auto_purge:
   enabled: false
   after: null
+compact_overview: false

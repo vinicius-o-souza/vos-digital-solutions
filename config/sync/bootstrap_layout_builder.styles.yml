@@ -6,9 +6,9 @@ plugins:
       enabled: true
   typography:
     text_color:
-      enabled: true
+      enabled: false
     text_alignment:
-      enabled: true
+      enabled: false
   spacing:
     padding:
       enabled: true
@@ -16,10 +16,10 @@ plugins:
       enabled: true
   border:
     border:
-      enabled: true
+      enabled: false
   shadow:
     box_shadow:
-      enabled: true
+      enabled: false
   animation:
     scroll_effects:
-      enabled: true
+      enabled: false

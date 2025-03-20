@@ -1,0 +1,9 @@
+name: 'VOSIX Components'
+type: module
+description: 'A module to alter the layout builder functionalities.'
+package: VOSIX
+core_version_requirement: ^10 || ^11
+
+dependencies:
+  - layout_builder
+  - bootstrap_layout_builder

@@ -1,8 +1,0 @@
-uuid: 817fb134-08a2-44f1-9a5f-fcaa1f21d5e5
-langcode: en
-status: true
-dependencies: {  }
-id: component
-label: Component
-revision: false
-description: 'A block type where you can add any component you want'

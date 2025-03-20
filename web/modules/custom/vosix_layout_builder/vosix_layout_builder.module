@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Provides functionality for the Vosix Layout Builder module.
+ */
+
+/**
+ * Implements hook_layout_alter().
+ */
+function vosix_layout_builder_layout_alter(array &$definitions): void {
+  // Remove all definitions that don't start with 'bootstrap_layout_builder:'
+  foreach ($definitions as $key => $definition) {
+    // Do not remove the layout_onecol which is the default layout.
+    if ($key == 'layout_onecol') {
+      continue;
+    }
+    if (strpos($key, 'bootstrap_layout_builder:') !== 0) {
+      unset($definitions[$key]);
+    }
+  }
+
+  $layout_to_remove = [
+    'bootstrap_layout_builder:blb_col_5',
+    'bootstrap_layout_builder:blb_col_7',
+    'bootstrap_layout_builder:blb_col_9',
+    'bootstrap_layout_builder:blb_col_11',
+  ];
+  foreach ($layout_to_remove as $layout) {
+    if (isset($definitions[$layout])) {
+      unset($definitions[$layout]);
+    }
+  }
+  
+}

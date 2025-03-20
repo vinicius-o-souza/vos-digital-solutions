@@ -17,6 +17,7 @@
     },
     "require": {
         "composer/installers": "^2.3",
+        "drupal/admin_toolbar": "^3.5",
         "drupal/bootstrap_layout_builder": "^2.2",
         "drupal/core-composer-scaffold": "^11.1.1",
         "drupal/core-recommended": "^11.1.1",
@@ -33,6 +34,7 @@
         "drupal/drupal_cms_project": "~1.0.0",
         "drupal/drupal_cms_seo_tools": "~1.0.1",
         "drupal/drupal_cms_starter": "~1.0.0",
+        "drupal/iconify_field": "^1.1",
         "drupal/paragraphs": "^1.19",
         "drupal/project_browser": "@alpha",
         "drupal/radix": "^6.0",

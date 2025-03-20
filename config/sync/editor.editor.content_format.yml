@@ -28,6 +28,7 @@ settings:
       - removeFormat
       - horizontalLine
       - drupalMedia
+      - IconifyField
       - heading
       - style
       - sourceEditing
@@ -130,6 +131,9 @@ settings:
         -
           label: Blockquote
           element: '<blockquote class="blockquote">'
+    iconify_field_ckeditor_iconify_field:
+      default_collection: null
+      collections: {  }
     linkit_extension:
       linkit_enabled: true
       linkit_profile: default

@@ -1,7 +1,7 @@
 _core:
   default_config_hash: 4GIX5Esnc_umpXUBj4IIocRX7Mt5fPhm4AgXfE3E56E
 module:
-  announcements_feed: 0
+  admin_toolbar: 0
   automated_cron: 0
   automatic_updates: 0
   automatic_updates_extensions: 0
@@ -36,6 +36,8 @@ module:
   friendlycaptcha: 0
   gin_toolbar: 0
   honeypot: 0
+  iconify_field: 0
+  iconify_field_ckeditor: 0
   image: 0
   inline_form_errors: 0
   jquery_ui: 0
@@ -87,6 +89,7 @@ module:
   vosix_components_alert: 0
   vosix_components_button: 0
   vosix_components_heading: 0
+  vosix_layout_builder: 0
   workflows: 0
   pathauto: 1
   content_translation: 10

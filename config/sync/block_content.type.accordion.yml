@@ -5,4 +5,4 @@ dependencies: {  }
 id: accordion
 label: Accordion
 revision: false
-description: 'A dynamic Bootstrap Accordion component for organizing content into expandable and collapsible sections.'
+description: 'A flexible Bootstrap Accordion component for organizing content into expandable and collapsible sections.'

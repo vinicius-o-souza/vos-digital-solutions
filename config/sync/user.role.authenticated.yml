@@ -2,12 +2,9 @@ uuid: ba1e4cdc-9290-4f57-9e67-bace0ea45cc8
 langcode: en
 status: true
 dependencies:
-  config:
-    - dashboard.dashboard.welcome
   module:
     - captcha
     - coffee
-    - dashboard
     - file
     - honeypot
     - klaro
@@ -29,4 +26,3 @@ permissions:
   - 'use klaro'
   - 'view media'
   - 'view own unpublished content'
-  - 'view welcome dashboard'
