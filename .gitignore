@@ -71,3 +71,7 @@
 !/web/profiles/drupal_cms_installer
 /.editorconfig
 /.gitattributes
+
+# Backups
+*.gz
+*.sql

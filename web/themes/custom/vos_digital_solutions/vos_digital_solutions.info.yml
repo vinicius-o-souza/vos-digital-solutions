@@ -26,3 +26,6 @@ regions:
 
 libraries:
   - vos_digital_solutions/style
+
+ckeditor5-stylesheets:
+  - build/css/main.style.css

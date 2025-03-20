@@ -53,6 +53,9 @@ function _vosix_components_preprocess_paragraphs(array &$variables): void {
 
   if ($paragraph->hasField('field_type')) {
     $type = $variables['content']['field_type'];
+    if (!isset($type[0])) {
+      return;
+    }
     if ($type['#formatter'] == 'list_key') {
       $variables['type'] = $type[0]['#markup'] ?? '';
     }
@@ -97,6 +100,9 @@ function _vosix_components_preprocess_block_content(array &$variables): void {
 
   if ($block->hasField('field_type')) {
     $type = $variables['content']['field_type'];
+    if (!isset($type[0])) {
+      return;
+    }
     if ($type['#formatter'] == 'list_key') {
       $variables['type'] = $type[0]['#markup'] ?? '';
     }

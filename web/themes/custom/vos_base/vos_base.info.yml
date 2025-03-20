@@ -34,6 +34,7 @@ libraries:
   - vos_base/style
   - vos_base/bootstrap_icons
   - core/normalize
+
 libraries-extend:
   core/drupal.ajax:
     - vos_base/drupal.ajax

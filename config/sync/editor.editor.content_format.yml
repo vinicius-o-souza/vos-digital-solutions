@@ -29,6 +29,7 @@ settings:
       - horizontalLine
       - drupalMedia
       - heading
+      - style
       - sourceEditing
   plugins:
     ckeditor5_alignment:
@@ -52,6 +53,83 @@ settings:
       multiBlock: true
     ckeditor5_sourceEditing:
       allowed_tags: {  }
+    ckeditor5_style:
+      styles:
+        -
+          label: H1
+          element: '<h1 class="display-1">'
+        -
+          label: H2
+          element: '<h2 class="display-2">'
+        -
+          label: H3
+          element: '<h3 class="display-3">'
+        -
+          label: H4
+          element: '<h4 class="display-4">'
+        -
+          label: H5
+          element: '<h5 class="display-5">'
+        -
+          label: Lead
+          element: '<p class="lead">'
+        -
+          label: Link
+          element: '<a class="btn btn-link">'
+        -
+          label: Primary
+          element: '<a class="btn btn-primary">'
+        -
+          label: 'Outline Primary'
+          element: '<a class="btn btn-outline-primary">'
+        -
+          label: Secondary
+          element: '<a class="btn btn-secondary">'
+        -
+          label: 'Outline Secondary'
+          element: '<a class="btn btn-outline-secondary">'
+        -
+          label: Success
+          element: '<a class="btn btn-success">'
+        -
+          label: 'Outline Success'
+          element: '<a class="btn btn-outline-success">'
+        -
+          label: Danger
+          element: '<a class="btn btn-danger">'
+        -
+          label: 'Outline Danger'
+          element: '<a class="btn btn-outline-danger">'
+        -
+          label: Warning
+          element: '<a class="btn btn-warning">'
+        -
+          label: 'Outline Warning'
+          element: '<a class="btn btn-outline-warning">'
+        -
+          label: Info
+          element: '<a class="btn btn-info">'
+        -
+          label: 'Outline Info'
+          element: '<a class="btn btn-outline-info">'
+        -
+          label: Light
+          element: '<a class="btn btn-light">'
+        -
+          label: 'Outline Light'
+          element: '<a class="btn btn-outline-light">'
+        -
+          label: Dark
+          element: '<a class="btn btn-dark">'
+        -
+          label: 'Outline Dark'
+          element: '<a class="btn btn-outline-dark">'
+        -
+          label: 'Button width 100%'
+          element: '<a class="w-100">'
+        -
+          label: Blockquote
+          element: '<blockquote class="blockquote">'
     linkit_extension:
       linkit_enabled: true
       linkit_profile: default
