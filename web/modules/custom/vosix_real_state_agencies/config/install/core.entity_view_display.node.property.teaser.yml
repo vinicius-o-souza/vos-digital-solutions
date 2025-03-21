@@ -1,0 +1,52 @@
+uuid: 371acb60-59b4-4078-9b74-05bc39c22705
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.property.field_body
+    - field.field.node.property.field_city
+    - field.field.node.property.field_gallery_images
+    - field.field.node.property.field_price
+    - field.field.node.property.field_transaction_type
+    - field.field.node.property.field_type
+    - node.type.property
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.property.teaser
+targetEntityType: node
+bundle: property
+mode: teaser
+content:
+  field_body:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_price:
+    type: number_decimal
+    label: visually_hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_city: true
+  field_gallery_images: true
+  field_transaction_type: true
+  field_type: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

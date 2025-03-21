@@ -1,0 +1,131 @@
+uuid: 57d632f6-022e-48c4-b3ec-168cb6506815
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - field.storage.node.field_city
+    - field.storage.node.field_price
+    - field.storage.node.field_transaction_type
+    - field.storage.node.field_type
+    - search_api.server.database
+  module:
+    - node
+    - taxonomy
+    - trash
+id: property
+name: 'Property '
+description: ''
+read_only: false
+field_settings:
+  city:
+    label: 'City » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_city:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_city
+      module:
+        - taxonomy
+  field_body:
+    label: Body
+    datasource_id: 'entity:node'
+    property_path: field_body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_body
+  node_grants:
+    label: 'Node access information'
+    property_path: search_api_node_grants
+    type: string
+    indexed_locked: true
+    type_locked: true
+    hidden: true
+  price:
+    label: Price
+    datasource_id: 'entity:node'
+    property_path: field_price
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.node.field_price
+  status:
+    label: Boolean
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+  transaction_type:
+    label: 'Transaction Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_transaction_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_transaction_type
+      module:
+        - taxonomy
+  type:
+    label: 'Type » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_type
+      module:
+        - taxonomy
+  uid:
+    label: 'Entity reference'
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    indexed_locked: true
+    type_locked: true
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - property
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  content_access:
+    weights:
+      preprocess_query: -30
+  custom_value: {  }
+  entity_status: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  trash_status: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: database

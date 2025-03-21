@@ -1,0 +1,79 @@
+uuid: dd0d7247-f172-45eb-a1a1-17428b7479d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.property.field_body
+    - field.field.node.property.field_city
+    - field.field.node.property.field_gallery_images
+    - field.field.node.property.field_price
+    - field.field.node.property.field_transaction_type
+    - field.field.node.property.field_type
+    - node.type.property
+  module:
+    - text
+    - user
+id: node.property.default
+targetEntityType: node
+bundle: property
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_city:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_gallery_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_price:
+    type: number_decimal
+    label: visually_hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_transaction_type:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

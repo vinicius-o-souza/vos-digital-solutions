@@ -1,0 +1,15 @@
+uuid: 92b08a73-5c31-4ffb-8aa5-f98f1e6e1be9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transaction_type
+id: taxonomy_term.transaction_type.default
+targetEntityType: taxonomy_term
+bundle: transaction_type
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true

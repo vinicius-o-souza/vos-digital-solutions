@@ -1,0 +1,13 @@
+name: 'VOSIX Real State Agencies'
+type: module
+description: 'A module to create a property content type and a property listing content type with facets.'
+package: VOSIX
+core_version_requirement: ^10 || ^11
+
+dependencies:
+  - better_exposed_filters
+  - search_api
+  - search_api_db
+  - facets
+  - facets_exposed_filters
+  - views

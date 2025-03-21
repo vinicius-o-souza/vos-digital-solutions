@@ -1,0 +1,47 @@
+uuid: a777e81d-f145-4f4a-b276-8a619e596810
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.transaction_type
+  module:
+    - path
+id: taxonomy_term.transaction_type.default
+targetEntityType: taxonomy_term
+bundle: transaction_type
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  publish_on: true
+  publish_state: true
+  unpublish_on: true
+  unpublish_state: true

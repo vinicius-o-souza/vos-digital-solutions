@@ -1,0 +1,28 @@
+uuid: 5101e26f-dab6-4763-9eec-75b7da57cdb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - filter.format.content_format
+    - filter.format.plain_text
+    - node.type.property
+  module:
+    - text
+id: node.property.field_body
+field_name: field_body
+entity_type: node
+bundle: property
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: true
+  allowed_formats:
+    - content_format
+    - plain_text
+field_type: text_with_summary

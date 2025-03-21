@@ -1,0 +1,15 @@
+uuid: fe54fa58-1fdb-459d-8b5e-e6f336aeff26
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.default
+targetEntityType: taxonomy_term
+bundle: city
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true
+  search_api_excerpt: true
