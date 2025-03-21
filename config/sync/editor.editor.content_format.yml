@@ -13,6 +13,8 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
+      - fontColor
+      - fontSize
       - bold
       - italic
       - link
@@ -52,6 +54,45 @@ settings:
         reversed: true
         startIndex: true
       multiBlock: true
+    ckeditor5_plugin_pack_font__font_color:
+      colors:
+        -
+          label: Dark
+          color: '#000000'
+          type:
+            font: font
+            background: background
+        -
+          label: White
+          color: '#ffffff'
+          type:
+            font: font
+            background: background
+      use_default_colors: false
+      use_colorpicker: false
+      font_color_columns: 5
+      font_color_document_colors: 10
+      bg_color_columns: 5
+      bg_color_document_colors: 10
+    ckeditor5_plugin_pack_font__font_size:
+      options: |-
+        12
+        14
+        default
+        18
+        22
+        24
+        28
+        32
+        42
+        48
+        52
+        64
+    ckeditor5_plugin_pack_link_attributes__link_attributes:
+      attributes:
+        -
+          label: Target
+          attributes: "target|_blank\r\ntarget|_same"
     ckeditor5_sourceEditing:
       allowed_tags: {  }
     ckeditor5_style:
@@ -132,7 +173,7 @@ settings:
           label: Blockquote
           element: '<blockquote class="blockquote">'
     iconify_field_ckeditor_iconify_field:
-      default_collection: null
+      default_collection: ''
       collections: {  }
     linkit_extension:
       linkit_enabled: true
